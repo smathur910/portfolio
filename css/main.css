@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;600;700&display=swap');
+:root {
+    --gray: #385663;
+    --light-blue: #3EB2A2;
+    --light-yellow: #FDD272;
+    --light-orange: #FFB26D;
+    --dark-orange: #FF7F60;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Catamaran', sans-serif;
+    background: var(--gray);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-containt {
+    margin: 30px 0;
+}
+
+.card-container {
+    position: relative;
+    margin: 63px 0;
+    width: 584px;
+    height: 624px;
+    background: var(--light-yellow);
+    border-radius: 13px;
+    box-shadow: 8px 8px 0px 1px var(--light-orange);
+}
+
+.main-title>div>h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--gray);
+    text-align: center;
+}
+
+.profile-img {
+    border: 6px solid var(--dark-orange);
+    display: inline-block;
+    position: relative;
+    width: 143px;
+    height: 143px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 3px 219px;
+}
+
+.profile-img>img {
+    width: auto;
+    height: 100%;
+    margin-left: -25px;
+}
+
+.tagline {
+    position: absolute;
+    top: 48%;
+    left: 34%;
+}
+
+.tagline>p {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--gray);
+    text-align: center;
+    line-height: 25px;
+}
+
+.dash-separate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue-dash {
+    width: 33px;
+    height: 3px;
+    background: var(--light-blue);
+    border-radius: 6px;
+    margin: 18px 0;
+}
+
+.skill_title>h1 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--gray);
+    text-align: center;
+}
+
+.tech_icons,
+.social_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech_icons>div>img,
+.social_icons>div>a>img {
+    width: 40px;
+    height: 40px;
+    margin: 11px 6px;
+}
+
+.footer_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_text>h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--light-blue);
+}
+
+.footer_text>a {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark-orange);
+    text-align: center;
+    text-decoration: none;
+    margin-left: 6px;
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 500px) {
+    .card-container {
+        margin: 63px 0;
+        width: 450px;
+        height: 512px;
+    }
+    .main-title>div>h1 {
+        font-size: 34px;
+    }
+    .tagline {
+        position: absolute;
+        top: 46%;
+        left: 32%;
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        margin: -7px 165px;
+    }
+    .tagline>p {
+        font-size: 13px;
+    }
+    .skill_title>h1 {
+        font-size: 20px;
+    }
+    .tech_icons>div>img,
+    .social_icons>div>a>img {
+        width: 30px;
+        height: 30px;
+        margin: 11px 6px;
+    }
+    .card-container {
+        margin: 30px 0;
+    }
+}
